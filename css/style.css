@@ -92,10 +92,6 @@ h6 {
 }
 
 /*--------------------*/
-body {
-  min-width: 1200px;
-}
-
 .wrapper {
   overflow: hidden;
   min-height: 100%;
@@ -107,6 +103,22 @@ body {
   padding: 0 15px;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    padding: 0 -50px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
 .page {
   width: 100%;
   height: 100%;
@@ -199,6 +211,58 @@ body {
   left: 44%;
 }
 
+@media (max-width: 1200px) {
+  .main-screen__logo {
+    top: 32px;
+    left: 50px;
+  }
+  .main-screen__list {
+    left: 40%;
+  }
+  .main-screen__title {
+    top: 42.5%;
+    left: 24.8%;
+    color: #ffffff;
+  }
+  .main-screen__button {
+    left: 41%;
+  }
+}
+@media (max-width: 992px) {
+  .main-screen__list {
+    left: 30%;
+  }
+  .main-screen__title {
+    left: 18.8%;
+  }
+}
+@media (max-width: 767px) {
+  .main-screen__list {
+    display: block;
+    top: 80px;
+    left: 50px;
+  }
+  .main-screen__title {
+    left: 12%;
+  }
+  .main-screen__main-title {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .main-screen__subtitle {
+    padding-left: 0px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .main-screen__button {
+    margin-top: 80px;
+    left: 30%;
+  }
+}
 .btn {
   width: 180px;
   height: 50px;
@@ -235,8 +299,8 @@ body {
 }
 
 .services {
-  height: 480px;
   margin: 0 auto;
+  padding-bottom: 73px;
 }
 
 .services__title {
@@ -278,7 +342,7 @@ body {
 .services__row {
   margin: 0 auto;
   display: flex;
-  width: 1140px;
+  flex-wrap: wrap;
 }
 
 .services__row-item {
@@ -505,8 +569,14 @@ body {
   flex-wrap: wrap;
   padding-left: 15px;
   margin-right: -15px;
+  justify-content: center;
 }
 
+@media (max-width: 992px) {
+  .latest-works__sample {
+    padding-left: 5px;
+  }
+}
 .latest-works__sample-item {
   position: relative;
   margin-right: 30px;
@@ -514,6 +584,12 @@ body {
   background-color: #c0301c;
 }
 
+@media (max-width: 992px) {
+  .latest-works__sample-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
 .latest-works__sample-item:hover img {
   opacity: 0.7;
 }
@@ -608,11 +684,11 @@ body {
 }
 
 .blog {
-  margin-bottom: 92px;
+  margin-bottom: 116px;
 }
 
 .blog__subtitle {
-  margin-bottom: 65px;
+  margin-bottom: 67px;
 }
 
 .blog__post {
@@ -621,7 +697,15 @@ body {
   padding-left: 15px;
 }
 
+.blog__post-foto {
+  flex: 0 0 39.3%;
+}
+.blog__post-foto img {
+  max-width: 100%;
+}
+
 .blog__post-text {
+  flex: 1 1 auto;
   margin-left: 40px;
 }
 
@@ -699,23 +783,25 @@ body {
 .brands {
   height: 477px;
   background-color: #f8f8f8;
-  margin-bottom: 105px;
-  padding-top: 105px;
+  margin-bottom: 91px;
+  padding-top: 94px;
 }
 
 .brands__row {
   margin: auto;
   display: flex;
-  width: 965px;
+  max-width: 965px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .brands__item {
-  margin: auto;
+  margin: 0 0 0 60px;
 }
 
 .brands__text {
-  width: 760px;
+  max-width: 790px;
   margin: 0 auto;
   font-family: "Roboto Slab";
   font-size: 18px;
@@ -725,6 +811,7 @@ body {
   color: #555555;
   text-align: center;
   margin-bottom: 30px;
+  padding: 0 15px;
 }
 
 .brands__sign {
@@ -766,18 +853,34 @@ body {
 
 .form__row {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .form__contacts {
   margin-left: 25px;
-  margin-right: 166px;
 }
 
+@media (max-width: 1200px) {
+  .form__contacts {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .form__contacts {
+    display: flex;
+  }
+}
 .form__cotact-item {
   margin-bottom: 38px;
   margin-left: 12px;
 }
 
+@media (max-width: 1200px) {
+  .form__cotact-item {
+    margin-left: 40px;
+  }
+}
 .form__contact-item-title {
   font-family: Montserrat;
   font-size: 14px;
@@ -797,10 +900,19 @@ body {
   color: #555555;
 }
 
+.form__forms {
+  margin-left: 166px;
+}
+
+@media (max-width: 1200px) {
+  .form__forms {
+    margin-left: 10px;
+  }
+}
 .form__inputs {
   display: flex;
   flex-wrap: wrap;
-  width: 730px;
+  max-width: 730px;
   height: 253px;
   justify-content: space-between;
 }
