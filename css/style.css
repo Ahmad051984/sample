@@ -299,6 +299,7 @@ h6 {
 }
 
 .services {
+  position: relative;
   margin: 0 auto;
   padding-bottom: 73px;
 }
@@ -390,7 +391,14 @@ h6 {
   text-align: center;
 }
 
+.services__back-button {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
 .about-us {
+  position: relative;
   width: 100%;
   height: auto;
   background-color: #f8f8f8;
@@ -529,7 +537,14 @@ h6 {
   padding: 10px;
 }
 
+.about-us__back-button {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
 .latest-works {
+  position: relative;
   margin-top: 193px;
   margin-bottom: 69px;
 }
@@ -640,6 +655,12 @@ h6 {
   color: #c0301c;
 }
 
+.latest-works__back-button {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
 .latest-works__item-title {
   display: none;
 }
@@ -706,6 +727,7 @@ h6 {
 }
 .blog {
   margin-bottom: 116px;
+  position: relative;
 }
 
 .blog__subtitle {
@@ -821,8 +843,15 @@ h6 {
   margin-bottom: 38px;
 }
 
+.blog__back-button {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
 /*Block brands*/
 .brands {
+  position: relative;
   height: 477px;
   background-color: #f8f8f8;
   margin-bottom: 91px;
@@ -885,9 +914,16 @@ h6 {
   background-color: #c0301c;
 }
 
+.brands__back-button {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
 /* Блок формы*/
 .form {
   margin-bottom: 100px;
+  position: relative;
 }
 
 .form__subtitle {
@@ -1086,6 +1122,27 @@ textarea::placeholder {
 }
 .form__note::first-letter {
   color: red;
+}
+
+.form__back-button {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
+.back-button {
+  background-color: #c0301c;
+  border: none;
+  color: white;
+  padding: 15px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 70px;
+  font-size: 16px;
+}
+.back-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (max-width: 767px) {

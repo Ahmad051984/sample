@@ -252,6 +252,7 @@ $fontfamily: "Montserrat";
 }
 
 .services {
+	position: relative;
 	// width: 1140px;
 	// height: 480px;
 	margin: 0 auto;
@@ -343,7 +344,13 @@ $fontfamily: "Montserrat";
 	width: 347px;
 	text-align: center;
 }
+.services__back-button{
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
 .about-us{
+	position: relative;
 	width: 100%;
 	height: auto;
 	background-color: #f8f8f8;
@@ -476,8 +483,14 @@ $fontfamily: "Montserrat";
 	right: 0;
 	padding: 10px;
   }
+.about-us__back-button{
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+}
 
 .latest-works {
+	position: relative;
 	margin-top:193px;
 	margin-bottom: 69px;
 
@@ -588,7 +601,11 @@ $fontfamily: "Montserrat";
 		}
 		
 	}
-
+}
+.latest-works__back-button{
+	position: absolute;
+	bottom: -50px;
+	right: 0;
 }
 .latest-works__item-title {
 	display: none;
@@ -653,6 +670,7 @@ $fontfamily: "Montserrat";
 
 .blog {
 	margin-bottom: 116px;
+	position: relative;
 }
 .blog__subtitle {
 	margin-bottom: 67px;
@@ -764,9 +782,15 @@ $fontfamily: "Montserrat";
 	background-color: #dddddd;
 	margin-bottom: 38px;;
 }
+.blog__back-button{
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+}
 
 /*Block brands*/
 .brands {
+	position: relative;
 	height: 477px;
 	background-color: #f8f8f8;
 	margin-bottom: 91px;
@@ -824,10 +848,16 @@ $fontfamily: "Montserrat";
 		background-color: #c0301c;
 	}
 }
+.brands__back-button{
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+}
 /* Блок формы*/
 
 .form {
 	margin-bottom: 100px;
+	position: relative;
 }
 
 .form__subtitle {
@@ -1007,6 +1037,27 @@ textarea::placeholder{
 		color: red;
 	}
 }
+
+.form__back-button{
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+
+}
+.back-button{
+	background-color: #c0301c;
+	border: none;
+	color: white;
+	padding: 15px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: 70px;
+	font-size: 16px;
+		&:hover{
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+	}
 @media (max-width: 767px) {
 	.form__note {
 		display: block;
@@ -1016,6 +1067,7 @@ textarea::placeholder{
 		width: 250px;
 	}
 }
+
 
 
 /*footer*/
